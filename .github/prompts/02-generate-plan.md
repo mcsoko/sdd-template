@@ -2,7 +2,7 @@
 
 Read:
 - `.specify/spec.md`
-- `.specify/constitution.md`
+- `.specify/memory/constitution.md`
 - all files in `specs/`
 
 Update `.specify/plan.md`.

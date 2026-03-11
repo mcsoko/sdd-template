@@ -1,20 +1,28 @@
-.PHONY: synthesize plan tasks implement verify clean-tasks
+.PHONY: synthesize constitution plan tasks implement verify clean-tasks
 
+# Synthesize spec and constitution from specs/
 synthesize:
-	@echo "Open .spec-agent/prompts/01-synthesize-spec.md in your agent and apply it to the current repo."
+	@echo "Open .github/prompts/01-synthesize-spec.md in your agent and apply it to the current repo."
 
+constitution: synthesize
+
+# Generate technical plan
 plan:
-	@echo "Open .spec-agent/prompts/02-generate-plan.md in your agent and apply it to the current repo."
+	@echo "Open .github/prompts/02-generate-plan.md in your agent and apply it to the current repo."
 
+# Generate implementation tasks
 tasks:
-	@echo "Open .spec-agent/prompts/03-generate-tasks.md in your agent and apply it to the current repo."
+	@echo "Open .github/prompts/03-generate-tasks.md in your agent and apply it to the current repo."
 
+# Implement a specific task
 implement:
 	@test -n "$(TASK)" || (echo "Usage: make implement TASK=.specify/tasks/001-something.md" && exit 1)
-	@echo "Open .spec-agent/prompts/04-implement-task.md and provide TASK=$(TASK) to your agent."
+	@echo "Open .github/prompts/04-implement-task.md and provide TASK=$(TASK) to your agent."
 
+# Verify implementation aligns with intent
 verify:
-	@echo "Open .spec-agent/prompts/05-verify-alignment.md in your agent and apply it to the current repo."
+	@echo "Open .github/prompts/05-verify-alignment.md in your agent and apply it to the current repo."
 
+# Remove generated task files
 clean-tasks:
 	rm -f .specify/tasks/*.md

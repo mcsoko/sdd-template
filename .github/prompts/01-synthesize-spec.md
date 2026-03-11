@@ -3,7 +3,7 @@
 Read all files in `specs/` and update:
 
 - `.specify/spec.md`
-- `.specify/constitution.md` only if the project clearly requires additional constraints
+- `.specify/memory/constitution.md` only if the project clearly requires additional constraints
 
 Rules:
 1. Treat `specs/` as the authoritative source of intent.

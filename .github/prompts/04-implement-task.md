@@ -6,7 +6,7 @@ Inputs:
 - the chosen task file
 - `.specify/spec.md`
 - `.specify/plan.md`
-- `.specify/constitution.md`
+- `.specify/memory/constitution.md`
 - relevant files from `specs/`
 
 Rules:

@@ -3,7 +3,7 @@
 Read:
 - `.specify/spec.md`
 - `.specify/plan.md`
-- `.specify/constitution.md`
+- `.specify/memory/constitution.md`
 - all files in `specs/`
 
 Create or update task files in `.specify/tasks/`.

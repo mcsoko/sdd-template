@@ -5,6 +5,7 @@ Read:
 - `.specify/spec.md`
 - `.specify/plan.md`
 - `.specify/tasks/`
+- `.specify/memory/constitution.md`
 - relevant code and tests
 
 Produce an alignment review that answers:
